@@ -29,6 +29,10 @@ header
     min-height: 5.5em;
 
 }
+#menu_principal nav a, #menu_principal nav a:visited, #menu_principal nav a:active
+{
+    color: black;
+}
 #sinscrire
 {
     color: #0065FC;
@@ -50,5 +54,38 @@ header
 {
     color: #0065FC;
     border-top: 3px solid #0065FC; 
+}
+/* BARRE DE RECHERCHE */
+#filtres form
+{
+    display: flex;
+}
+#icone_position
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    background-color: #f2f2f2;
+    border-radius: 1em 0 0 1em;
+}
+#bouton_rechercher
+{
+    background-color: #0065FC;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1em 0 1em;
+    border-radius: 0 1em 1em 0;
+    font-weight: bold;
+}
+#champs_recherche
+{
+    border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+    border-left: none;
+    border-right: none;
 }
 /* FILTRES */
