@@ -1,0 +1,54 @@
+/* FONT */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
+/* GENERAL */
+body
+{
+    background-color: #ffffff;
+    font-family: 'Raleway', 'Sans Serif';
+    margin: auto;
+    padding: 0px 50px 0px 50px;
+    max-width: 1440px;
+}
+/* HEADER */
+header
+{
+    min-height: 5.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#menu_principal
+{
+    display: flex;
+    min-height: 5.5em;
+}
+#menu_principal nav
+{
+    display: flex;
+    align-items: center;
+    min-height: 5.5em;
+
+}
+#sinscrire
+{
+    color: #0065FC;
+    display: flex;
+    align-items: center;
+    min-height: 5.5em;
+}
+#menu_principal a
+{
+    display: flex;
+    align-items: center;
+    margin-left: 3em;
+    text-decoration: none;
+    min-height: 5.5em;
+    border-top: 3px solid transparent;
+    font-weight: 500;
+}
+#menu_principal a:hover
+{
+    color: #0065FC;
+    border-top: 3px solid #0065FC; 
+}
+/* FILTRES */
