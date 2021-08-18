@@ -148,6 +148,8 @@ header
 {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
 }
 #hebergements_principaux
 {
@@ -159,7 +161,7 @@ header
     margin-right: 2em;
     flex: 2.2;
 }
-#titre_hebergements_principaux
+.titre_hebergements
 {
     padding: 0%;
     margin-block: unset; /* afin d'éviter les marges sur le titre */
@@ -171,10 +173,9 @@ header
     background-color: #FFFFFF;
     border-radius: 1em;
     padding: 5px;
-    width: 15em;
-    margin-right: 1.2em;
-    margin-bottom: 1.2em;
-    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.068)
+    min-width: 15em;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.068);
+    margin-bottom: 2em;
 }
 .img_fiche_hebergement_principal
 {
@@ -182,6 +183,18 @@ header
     object-fit: cover;
     border-radius: 1em 1em 0 0;
     width: 100%;
+}
+.etoiles_hebergement
+{
+    display: flex;
+}
+.etoile_true
+{
+    color: #0065FC;
+}
+.etoile_false
+{
+    color: #d9d9d9;
 }
 /* HEBERGEMENTS SECONDAIRES */
 #hebergements_secondaires
