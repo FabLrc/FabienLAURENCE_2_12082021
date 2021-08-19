@@ -9,6 +9,11 @@ body
     padding: 0px 50px 0px 50px;
     max-width: 1340px;
 }
+.no_margin
+{
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
 /* HEADER */
 header
 {
@@ -142,27 +147,29 @@ header
 /* HEBERGEMENTS PRINCIPAUX */
 #main_hebergements
 {
-    display: flex;
+    display: grid;
+    column-gap: 2rem;
+    grid-template-columns: 6fr 3fr;
 }
 #hebergements_marseille
 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: stretch;
+    
 }
 #hebergements_principaux
 {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    column-gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
     background-color: #f2f2f2;
     border-radius: 2em;
     padding: 2em;
-    margin-right: 2em;
-    flex: 2.2;
+    
 }
 .titre_hebergements
 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
     padding: 0%;
     margin-block: unset; /* afin d'éviter les marges sur le titre */
     padding-bottom: 1em;
@@ -195,6 +202,28 @@ header
 .etoile_false
 {
     color: #d9d9d9;
+}
+/* FICHES SECONDAIRES */
+.fiche_hebergement_secondaire
+{
+    display: flex;
+    background-color: #FFFFFF;
+    border-radius: 1em;
+    padding: 5px;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.068);
+    min-width: 100%;
+}
+.img_fiche_hebergement_secondaire
+{
+    height: 8rem;
+    object-fit: cover;
+    border-radius: 1em 0 0 1em;
+    width: 100%;
+}
+.zone_texte_hebergement_secondaire
+{
+    display: flex;
+    flex-direction: column;
 }
 /* HEBERGEMENTS SECONDAIRES */
 #hebergements_secondaires
