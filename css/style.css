@@ -213,15 +213,18 @@ header
 /* FICHES SECONDAIRES */
 .fiche_hebergement_secondaire
 {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     background-color: #FFFFFF;
     border-radius: 1em;
     padding: 5px;
     box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.068);
     min-width: 100%;
+    margin-bottom: 2rem;
 }
 .img_fiche_hebergement_secondaire
 {
+    grid-column-start: 1;
     height: 8rem;
     object-fit: cover;
     border-radius: 1em 0 0 1em;
@@ -229,8 +232,11 @@ header
 }
 .zone_texte_hebergement_secondaire
 {
+    grid-column-start: 2;
+    grid-column-end: 4;
     display: flex;
     flex-direction: column;
+    padding: 5px;
 }
 /* HEBERGEMENTS SECONDAIRES */
 #hebergements_secondaires
