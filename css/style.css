@@ -319,3 +319,37 @@ header
     text-decoration: none;
     padding-bottom: 0.5em;
 }
+/* RESPONSIVE TABLETTE */
+@media screen and (max-width: 1440px)
+{
+    #main_hebergements
+    {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #hebergements_secondaires
+    {
+        margin-bottom: 2rem;
+    }
+    #hebergements_populaires
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 2rem;
+    }
+    /* ACTIVITES */
+    #images_activites_marseilles
+    {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .vieux_port
+    {
+        grid-column-start: 1;
+        grid-row: 1;
+    }
+    .parc_calanques
+    {
+        grid-column: 3;
+        grid-row : 1;
+    }
+}
