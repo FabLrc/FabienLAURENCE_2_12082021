@@ -5,6 +5,7 @@ body
 {
     background-color: #ffffff;
     font-family: 'Raleway', 'Sans Serif';
+    margin: 0;
 }
 main
 {
@@ -20,23 +21,26 @@ main
 header
 {
     min-height: 5.5em;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+    grid-template-areas: "logo espace nav bouton";
     align-items: center;
+}
+#logo
+{
+    grid-area: logo;
+}
+#espace
+{
+    grid-area: espace;
 }
 #menu_principal
 {
     display: flex;
     min-height: 5.5em;
+    grid-area: nav;
 }
-#menu_principal nav
-{
-    display: flex;
-    align-items: center;
-    min-height: 5.5em;
-
-}
-#menu_principal nav a, #menu_principal nav a:visited, #menu_principal nav a:active
+#menu_principal a, #menu_principal a:visited, #menu_principal a:active
 {
     color: black;
 }
@@ -46,6 +50,10 @@ header
     display: flex;
     align-items: center;
     min-height: 5.5em;
+    font-weight: bold;
+    grid-area: bouton;
+    text-decoration: none;
+    margin-left: 3em;
 }
 #menu_principal a
 {
@@ -63,6 +71,7 @@ header
     border-top: 3px solid #0065FC; 
 }
 /* BARRE DE RECHERCHE */
+
 #recherche form
 {
     display: flex;
@@ -97,19 +106,26 @@ header
     border-left: none;
     border-right: none;
 }
+
 /* FILTRES */
 #filtres
 {
     display: flex;
-    max-height: 50px;
+    
     align-items: center;
     margin-bottom: 1em;
+    flex-wrap: wrap;
+}
+#texte_filtres
+{
+    margin-right: 1em;
 }
 .boutons_filtres
 {
     display: flex;
     position: relative;
-    margin-left: 2em;
+    margin-right: 2em;
+    margin-bottom: 1em;
     border: 2px solid #dddddd;
     border-radius: 2em;
     align-items: center;
@@ -157,10 +173,6 @@ header
     column-gap: 2rem;
     grid-template-columns: 6fr 3fr;
 }
-#hebergements_marseille
-{
-    
-}
 #hebergements_principaux
 {
     display: grid;
@@ -183,6 +195,12 @@ header
 .zone_texte_hebergement_principal
 {
     padding: 3px;
+}
+#afficher_plus_hebergements
+{
+    color: black;
+    font-weight: bold;
+    font-size: 1.2em;
 }
 /* FICHES */
 .fiche_hebergement_principal
@@ -275,6 +293,7 @@ header
     width: 100%;
     object-fit: cover;
     border-radius: 1em 1em 0 0;
+    position: relative;
 }
 .fiche_activite h3
 {
@@ -337,6 +356,10 @@ header
         grid-template-columns: 1fr 1fr 1fr;
         column-gap: 2rem;
     }
+    .fiche_hebergement_secondaire
+    {
+        margin-bottom: 0;
+    }
     /* ACTIVITES */
     #images_activites_marseilles
     {
@@ -351,5 +374,101 @@ header
     {
         grid-column: 3;
         grid-row : 1;
+    }
+}
+/* TRANSITION RESPONSIVE => 1008px */
+@media screen and (max-width: 1008px)
+{
+    #hebergements_populaires
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        row-gap: 2rem;
+    }
+    #hebergements_principaux
+    {
+        display: flex;
+        flex-direction: column;
+    }
+}
+/* TRANSITION RESPONSIVE => 680px */
+@media screen and (max-width: 680px)
+{
+    #images_activites_marseilles
+    {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .fiche_activite
+    {
+        width: 100%;
+        height: 100%;
+    }
+/* TRANSITION RESPONSIVE => 632px */
+@media screen and (max-width: 632px)
+{
+    main
+    {
+        margin: 0;
+        padding: 0;
+    }
+    header
+    {
+        justify-content: space-between;
+        grid-template-columns: auto 1fr auto;
+        grid-template-areas: "logo espace bouton"
+                       "nav nav nav";
+    }
+    #menu_principal
+    {
+        display: flex;
+        justify-content: space-around;
+    }
+    #menu_principal a
+    {
+        border-bottom: 3px solid #0065FC;
+    }
+    /* BARRE DE RECHERCHE */
+    
+    #champs_recherche
+    {
+        flex: 1;
+    }
+    #texte_rechercher
+    {
+        display: none;
+    }
+    #bouton_rechercher
+    {
+        border-radius: 1em;
+    }
+    /* FOOTER */
+    #column_footer
+    {
+        flex-direction: column;
+    }
+    /* AUTRES MODIFICATIONS LEGERES */
+    #recherche, #logo, #sinscrire, #activites_marseilles
+    {
+        padding: 0px 2em 0px 2em;
+    }
+    #hebergements_principaux
+    {
+        background-color: transparent;
+    }
+    #hebergements_secondaires
+    {
+        border-radius: 0;
+    }
+    
+}
+
+/* REGLE EXCLUSIVE POUR LA BARRE DE RECHERCHE */
+@media screen and (min-width: 632px)
+{
+    .fa-search
+    {
+        display: none !important; /* Sans le !important, le logo ne s'enleve pas */
     }
 }

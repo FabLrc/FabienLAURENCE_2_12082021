@@ -2,6 +2,7 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Reservia</title>
         <link href="css/style.css" rel="stylesheet" />
         <meta name="description" content="Reservia - Réservez votre logement de vacances en ligne partout en France !">
@@ -20,15 +21,14 @@
         <main>
         <header>
             <!-- LOGO -->
-            <a href="#"><img src="img/logo/Reservia.svg" alt="Logo Reservia" /></a>
+            <a href="#" id="logo"><img src="img/logo/Reservia.svg" alt="Logo Reservia" /></a>
             <!-- MENU PRINCIPAL -->
-            <div id="menu_principal">
-                <nav>
-                    <a href="#">Hébergements</a>
-                    <a href="#">Activités</a>
-                </nav>
-                <a id="sinscrire" href="#">S'inscrire</a>
-            </div>
+            <div id="espace"></div>
+            <nav id="menu_principal">
+                <a href="#">Hébergements</a>
+                <a href="#">Activités</a>
+            </nav>
+            <a id="sinscrire" href="#">S'inscrire</a>
         </header>
         <!-- RECHERCHE ET FILTRES -->
         <section id="recherche">
@@ -42,7 +42,8 @@
                 <input id="champs_recherche" type="search" placeholder="Marseilles, France">
                 <a id="bouton_rechercher" href="#">
                     <span>
-                        <p>Rechercher</p>
+                        <p id="texte_rechercher">Rechercher</p>
+                        <i class="fas fa-search"></i>
                     </span>
                 </a>
             </form>
@@ -234,8 +235,8 @@
                         <img src="img/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Le Vieux Port">
                         <h3>Vieux Port</h3>
                     </div>
-                    <div class="fiche_activite">
-                        <img src="img/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">
+                    <div class="fiche_activite fort_pomegues">
+                        <img src="img/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">
                         <h3>Fort de Pomègues</h3>
                     </div>
                     <div class="fiche_activite parc_calanques">
