@@ -25,8 +25,8 @@
             <!-- MENU PRINCIPAL -->
             <div id="espace"></div>
             <nav id="menu_principal">
-                <a href="#">Hébergements</a>
-                <a href="#">Activités</a>
+                <a id="lien_hebergements" href="#main_hebergements">Hébergements</a>
+                <a href="#activites_marseilles">Activités</a>
             </nav>
             <a id="sinscrire" href="#">S'inscrire</a>
         </header>
@@ -51,30 +51,38 @@
             <div id="filtres">
                 <h2 id="texte_filtres">Filtres</h2>
                 <!-- 4 BOUTINS FILTRES -->
+                <a class="lien_bouton_filtre" href="#">
                 <div class="boutons_filtres">
                     <span class="icones_filtres">
-                        <i class="fas fa-map-marker-alt"></i>
+                        <i class="fas fa-money-bill-wave"></i>
                     </span>
                     <p>Economique</p>
                 </div>
+                </a>
+                <a class="lien_bouton_filtre" href="#">
                 <div class="boutons_filtres">
                     <span class="icones_filtres">
-                        <i class="fas fa-map-marker-alt"></i>
+                        <i class="fas fa-child"></i>
                     </span>
                     <p>Familial</p>
                 </div>
+                </a>
+                <a class="lien_bouton_filtre" href="#">
                 <div class="boutons_filtres">
                     <span class="icones_filtres">
-                        <i class="fas fa-map-marker-alt"></i>
+                        <i class="fas fa-heart"></i>
                     </span>
                     <p>Romantique</p>
                 </div>
+                </a>
+                <a class="lien_bouton_filtre" href="#">
                 <div class="boutons_filtres">
                     <span class="icones_filtres">
-                        <i class="fas fa-map-marker-alt"></i>
+                        <i class="fas fa-dog"></i>
                     </span>
                     <p>Animaux autorisés</p>
                 </div>
+                </a>
             </div>
             <!-- INFORMATIONS FILTRES -->
             <div id="information_filtres">
@@ -90,6 +98,7 @@
                     <h2 class="titre_hebergements">Hébergements à Marseille</h2>
                     
                         <!-- FICHES HEBERGEMENTS -->
+                        <a class="lien_fiche" href="#">
                         <article class="fiche_hebergement_principal"> <!-- AUBERGE DE LA CANNEBIERE-->
                             <img class="img_fiche_hebergement_principal" src="img/hebergements/4_small/cannebiere.jpg" alt="Auberge de la Cannebière">
                             <div class="zone_texte_hebergement_principal">
@@ -104,6 +113,8 @@
                             </div>
                             </div>
                         </article>
+                        </a>
+                        <a class="lien_fiche" href="#">
                         <article class="fiche_hebergement_principal"> <!-- HOTEL DU PORT-->
                             <img class="img_fiche_hebergement_principal" src="img/hebergements/4_small/hotel_du_port.jpg" alt="Hôtel du port">
                             <div class="zone_texte_hebergement_principal">
@@ -118,6 +129,8 @@
                             </div>
                             </div>
                         </article>
+                        </a>
+                        <a class="lien_fiche" href="#">
                         <article class="fiche_hebergement_principal"> <!-- HOTEL LES MOUETTES-->
                             <img class="img_fiche_hebergement_principal" src="img/hebergements/4_small/hotel_mouettes.jpg" alt="Hôtel Les mouettes">
                             <div class="zone_texte_hebergement_principal">
@@ -132,6 +145,8 @@
                             </div>
                             </div>
                         </article>
+                        </a>
+                        <a class="lien_fiche" href="#">
                         <article class="fiche_hebergement_principal"> <!-- AUBERGE DE LA MER-->
                             <img class="img_fiche_hebergement_principal" src="img/hebergements/4_small/hotel_mer.jpg" alt="Auberge de la mer">
                             <div class="zone_texte_hebergement_principal">
@@ -146,6 +161,8 @@
                             </div>
                             </div>
                         </article>
+                        </a>
+                        <a class="lien_fiche" href="#">
                         <article class="fiche_hebergement_principal"> <!-- AUBERGE LE PANIER-->
                             <img class="img_fiche_hebergement_principal" src="img/hebergements/4_small/auberge_panier.jpg" alt="Auberge Le Panier">
                             <div class="zone_texte_hebergement_principal">
@@ -160,6 +177,8 @@
                             </div>
                             </div>
                         </article>
+                        </a>
+                        <a class="lien_fiche" href="#">
                         <article class="fiche_hebergement_principal"> <!-- HOTEL CHEZ AMINA-->
                             <img class="img_fiche_hebergement_principal" src="img/hebergements/4_small/hotel_amina.jpg" alt="Hôtel chez Amina">
                             <div class="zone_texte_hebergement_principal">
@@ -174,14 +193,18 @@
                             </div>
                             </div>
                         </article>
+                        </a>
                     
                     <p><a id="afficher_plus_hebergements" href="#">Afficher plus</a></p>
                 </section>
                 <!-- HEBERGEMENTS SECONDAIRES -->
                 <section id="hebergements_secondaires">
-                    <h2 class="titre_hebergements">Les plus populaires</h2>
+                    <h2 class="titre_hebergements">Les plus populaires
+                        <i class="fas fa-chart-line"></i>
+                    </h2>
                     <div id="hebergements_populaires">
                         <!-- FICHES HEBERGEMENTS -->
+                        <a class="lien_fiche" href="#">
                         <article class="fiche_hebergement_secondaire"> <!-- HOTEL LE SOLEIL DU MATIN-->
                             <img class="img_fiche_hebergement_secondaire" src="img/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le Soleil du Matin">
                             <div class="zone_texte_hebergement_secondaire">
@@ -196,6 +219,8 @@
                                 </div>
                             </div>
                         </article>
+                        </a>
+                        <a class="lien_fiche" href="#">
                         <article class="fiche_hebergement_secondaire"> <!-- AU COEUR DE L'EAU CHAMBRE D'HOTE-->
                             <img class="img_fiche_hebergement_secondaire" src="img/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau Chambre d'hôtes">
                             <div class="zone_texte_hebergement_secondaire">
@@ -210,6 +235,8 @@
                                 </div>
                             </div>
                         </article>
+                        </a>
+                        <a class="lien_fiche" href="#">
                         <article class="fiche_hebergement_secondaire"> <!-- HOTEL TOUT BLEU ET BLANC-->
                             <img class="img_fiche_hebergement_secondaire" src="img/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Tout bleu et blanc">
                             <div class="zone_texte_hebergement_secondaire">
@@ -224,6 +251,7 @@
                                 </div>
                             </div>
                         </article>
+                        </a>
                     </div>
                 </section>
             </section>
@@ -231,30 +259,30 @@
             <section id="activites_marseilles">
                 <h2 id="titre_activites">Activités à Marseilles</h2>
                 <div id="images_activites_marseilles">
-                    <div class="fiche_activite vieux_port">
+                    <a class="fiche_activite vieux_port" href="#">
                         <img src="img/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Le Vieux Port">
                         <h3>Vieux Port</h3>
-                    </div>
-                    <div class="fiche_activite fort_pomegues">
+                    </a>
+                    <a class="fiche_activite fort_pomegues" href="#">
                         <img src="img/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">
                         <h3>Fort de Pomègues</h3>
-                    </div>
-                    <div class="fiche_activite parc_calanques">
+                    </a>
+                    <a class="fiche_activite parc_calanques" href="#">
                         <img src="img/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques">
                         <h3>Parc National des Calanques</h3>
-                    </div>
-                    <div class="fiche_activite">
+                    </a>
+                    <a class="fiche_activite" href="#">
                         <img src="img/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde">
                         <h3>Notre-Dame-de-la-Garde</h3>
-                    </div>
-                    <div class="fiche_activite">
+                    </a>
+                    <a class="fiche_activite" href="#">
                         <img src="img/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Île du Frioul">
                         <h3>Île du Frioul</h3>
-                    </div>
-                    <div class="fiche_activite">
+                    </a>
+                    <a class="fiche_activite" href="#">
                         <img src="img/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp">
                         <h3>Parc Longchamp</h3>
-                    </div>
+                    </a>
                 </div>
             </section>
         </main>
