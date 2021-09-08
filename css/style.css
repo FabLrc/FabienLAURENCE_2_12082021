@@ -326,7 +326,7 @@ header
 }
 .fiche_activite:hover
 {
-    transform: scale(1.05);
+    color: #0065FC;
 }
 /* POSITION DES FICHES D'ACTIVITES */
 .vieux_port
@@ -366,6 +366,10 @@ header
     color: black;
     text-decoration: none;
     padding-bottom: 0.5em;
+}
+#footer a:hover
+{
+    color: #0065FC;
 }
 /* RESPONSIVE TABLETTE */
 @media screen and (max-width: 1440px)
