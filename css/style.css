@@ -7,7 +7,7 @@ body
     font-family: 'Raleway', 'Sans Serif';
     margin: 0;
 }
-main
+main, header
 {
     max-width: 1440px;
     margin: auto;
