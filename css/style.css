@@ -453,7 +453,7 @@ header
 /* TRANSITION RESPONSIVE => 632px */
 @media screen and (max-width: 632px)
 {
-    main
+    main, header
     {
         margin: 0;
         padding: 0;
@@ -520,4 +520,3 @@ header
         border-radius: 0;
     }   
 }
-
