@@ -524,5 +524,9 @@ header
     #hebergements_secondaires
     {
         border-radius: 0;
-    }   
+    }
+    .img_fiche_hebergement_principal
+    {
+        max-height: 7rem;
+    }
 }
