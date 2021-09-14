@@ -436,6 +436,11 @@ header
     {
         width: 100%;
     }
+    .img_fiche_hebergement_principal
+    {
+        height: auto;
+        max-height: 13rem;
+    }
 }
 /* TRANSITION RESPONSIVE => 680px */
 @media screen and (max-width: 680px)
